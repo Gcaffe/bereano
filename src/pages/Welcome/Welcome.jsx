@@ -1,5 +1,6 @@
 import { useApp } from '../../context/AppContext'
 import { useNavigate } from 'react-router-dom'
+import logo from '../../assets/logo-iglesia.png'
 
 function Welcome() {
   const { t, user, isFirstTime, toggleLang, lang } = useApp()
@@ -14,13 +15,14 @@ function Welcome() {
 
       <div className="welcome-content">
         <div className="church-logo">
-            <img src="/src/assets/logo-iglesia.png" alt="Logo Iglesia" className="church-logo-img" />
+          <img src={logo} alt="Logo Iglesia" className="church-logo-img" />
         </div>
 
         <h1>{t.welcome}</h1>
         {!isFirstTime && (
           <p className="welcome-back">{t.welcomeBack} <strong>{user.name}</strong></p>
         )}
+        <p className="app-verse">{t.appVerse}</p>
 
         <button
           className="btn-primary"
