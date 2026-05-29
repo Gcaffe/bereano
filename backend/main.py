@@ -1,16 +1,12 @@
 from pathlib import Path
-from dotenv import load_dotenv
-
-load_dotenv(dotenv_path=Path(__file__).parent / ".env")
-
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import StreamingResponse
 from pydantic import BaseModel
+import os
 import anthropic
 import httpx
 import json
-import os
 
 print("API KEY:", os.getenv("ANTHROPIC_KEY")[:20] if os.getenv("ANTHROPIC_KEY") else "NO ENCONTRADA")
 
