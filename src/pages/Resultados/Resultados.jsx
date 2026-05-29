@@ -5,6 +5,8 @@ import { Document, Packer, Paragraph, TextRun, HeadingLevel } from 'docx'
 import { saveAs } from 'file-saver'
 import jsPDF from 'jspdf'
 
+const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:8300'
+
 function buildPrompt(state, t) {
   const { book, chapter, verseFrom, verseTo, bibleVersion,
           audience, context, emphasis, tradition, tone, length, content } = state
@@ -100,7 +102,7 @@ export default function Resultados() {
     const platform = user.platform || 'claude'
 
     try {
-      const res = await fetch('http://localhost:8300/generate', {
+      const res = await fetch(`${API_BASE}/generate`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ prompt, platform })
