@@ -5,7 +5,7 @@ import { Document, Packer, Paragraph, TextRun, HeadingLevel } from 'docx'
 import { saveAs } from 'file-saver'
 import jsPDF from 'jspdf'
 
-const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:8300'
+const API_BASE = 'https://bereano-production.up.railway.app'
 
 function buildPrompt(state, t) {
   const { book, chapter, verseFrom, verseTo, bibleVersion,
