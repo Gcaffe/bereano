@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+
+<defs>
+  <linearGradient id="fondoG" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" style="stop-color:#1a4a2e"/>
+    <stop offset="100%" style="stop-color:#0f3320"/>
+  </linearGradient>
+  <linearGradient id="pagIzqG" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" style="stop-color:#e8eef8"/>
+    <stop offset="100%" style="stop-color:#f5f8ff"/>
+  </linearGradient>
+  <linearGradient id="pagDerG" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" style="stop-color:#f5f8ff"/>
+    <stop offset="100%" style="stop-color:#e0e8f5"/>
+  </linearGradient>
+  <linearGradient id="lomoG" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" style="stop-color:#5a3a0a"/>
+    <stop offset="50%" style="stop-color:#8B6914"/>
+    <stop offset="100%" style="stop-color:#5a3a0a"/>
+  </linearGradient>
+  <linearGradient id="somIzqG" x1="100%" y1="0%" x2="0%" y2="0%">
+    <stop offset="0%" style="stop-color:#c5d5ee; stop-opacity:0.7"/>
+    <stop offset="100%" style="stop-color:#c5d5ee; stop-opacity:0"/>
+  </linearGradient>
+  <linearGradient id="somDerG" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" style="stop-color:#c5d5ee; stop-opacity:0.7"/>
+    <stop offset="100%" style="stop-color:#c5d5ee; stop-opacity:0"/>
+  </linearGradient>
+</defs>
+
+<!-- Fondo -->
+<rect x="0" y="0" width="512" height="512" rx="90" fill="url(#fondoG)"/>
+
+<!-- Rayos de luz -->
+<path d="M256 44 L20 500 L60 500 Z"   fill="#FFD700" opacity="0.12"/>
+<path d="M256 44 L100 500 L140 500 Z" fill="#FFD700" opacity="0.12"/>
+<path d="M256 44 L190 500 L225 500 Z" fill="#FFD700" opacity="0.12"/>
+<path d="M256 44 L270 500 L305 500 Z" fill="#FFD700" opacity="0.12"/>
+<path d="M256 44 L350 500 L385 500 Z" fill="#FFD700" opacity="0.12"/>
+<path d="M256 44 L420 500 L455 500 Z" fill="#FFD700" opacity="0.12"/>
+<path d="M256 44 L470 500 L500 500 Z" fill="#FFD700" opacity="0.12"/>
+
+<!-- Sombra libro -->
+<ellipse cx="256" cy="475" rx="180" ry="22" fill="#000" opacity="0.2"/>
+
+<!-- TAPA IZQUIERDA -->
+<path d="M60 430 Q60 70 245 54 L245 435 Q160 435 60 430 Z" fill="#1a4a2e"/>
+<path d="M72 120 Q72 84 230 68 L230 102 Q86 114 72 146 Z" fill="white" opacity="0.15"/>
+
+<!-- TAPA DERECHA -->
+<path d="M452 430 Q452 70 267 54 L267 435 Q352 435 452 430 Z" fill="#143d24"/>
+<path d="M282 68 Q400 72 436 92 L436 124 Q400 110 282 104 Z" fill="white" opacity="0.12"/>
+
+<!-- PÁGINAS IZQUIERDA -->
+<path d="M76 428 Q76 88 248 72 L248 430 Q166 430 76 428 Z" fill="url(#pagIzqG)"/>
+<line x1="90"  y1="132" x2="242" y2="122" stroke="#b0c4de" stroke-width="3.5"/>
+<line x1="90"  y1="162" x2="242" y2="152" stroke="#b0c4de" stroke-width="3.5"/>
+<line x1="90"  y1="192" x2="242" y2="182" stroke="#b0c4de" stroke-width="3.5"/>
+<line x1="90"  y1="222" x2="242" y2="212" stroke="#b0c4de" stroke-width="3.5"/>
+<line x1="90"  y1="252" x2="242" y2="242" stroke="#b0c4de" stroke-width="3.5"/>
+<line x1="90"  y1="282" x2="242" y2="272" stroke="#b0c4de" stroke-width="3.5"/>
+<line x1="90"  y1="312" x2="180" y2="306" stroke="#b0c4de" stroke-width="3.5"/>
+<path d="M200 72 L248 72 L248 430 L200 430 Z" fill="url(#somIzqG)"/>
+
+<!-- PÁGINAS DERECHA -->
+<path d="M436 428 Q436 88 264 72 L264 430 Q346 430 436 428 Z" fill="url(#pagDerG)"/>
+<line x1="270" y1="122" x2="422" y2="132" stroke="#b0c4de" stroke-width="3.5"/>
+<line x1="270" y1="152" x2="422" y2="162" stroke="#b0c4de" stroke-width="3.5"/>
+<line x1="270" y1="182" x2="422" y2="192" stroke="#b0c4de" stroke-width="3.5"/>
+<line x1="270" y1="212" x2="422" y2="222" stroke="#b0c4de" stroke-width="3.5"/>
+<line x1="270" y1="242" x2="422" y2="252" stroke="#b0c4de" stroke-width="3.5"/>
+<line x1="270" y1="272" x2="422" y2="282" stroke="#b0c4de" stroke-width="3.5"/>
+<line x1="270" y1="306" x2="336" y2="312" stroke="#b0c4de" stroke-width="3.5"/>
+<path d="M312 72 L264 72 L264 430 L312 430 Z" fill="url(#somDerG)"/>
+
+<!-- LOMO CENTRAL -->
+<rect x="245" y="54" width="22" height="378" rx="5" fill="url(#lomoG)"/>
+<rect x="250" y="60" width="7" height="366" rx="2" fill="white" opacity="0.2"/>
+
+<!-- EBC VERTICAL EN EL LOMO -->
+<text x="256" y="168" font-family="Georgia, serif" font-size="22" font-weight="700" fill="#FFD700" text-anchor="middle">E</text>
+<text x="256" y="246" font-family="Georgia, serif" font-size="22" font-weight="700" fill="#FFD700" text-anchor="middle">B</text>
+<text x="256" y="324" font-family="Georgia, serif" font-size="22" font-weight="700" fill="#FFD700" text-anchor="middle">C</text>
+
+<!-- MARCAPÁGINAS -->
+<path d="M290 54 L304 54 L304 118 L297 110 L290 118 Z" fill="#e8a020"/>
+<path d="M222 54 L208 54 L208 118 L215 110 L222 118 Z" fill="#e8a020"/>
+
+<!-- Estrella superior -->
+<circle cx="256" cy="30" r="24" fill="#FFD700" opacity="0.85"/>
+<path d="M256 8 L260 20 L274 20 L263 28 L267 40 L256 32 L245 40 L249 28 L238 20 L252 20 Z" fill="#FFA500"/>
+
+</svg>
